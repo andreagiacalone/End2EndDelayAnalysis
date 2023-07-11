@@ -1,0 +1,13 @@
+function destinationIdx = findDestination(destinationLabel,destinationList)
+%FINDDESTINATION : allows to find the index of a destination station given
+%its label
+%@destinationLabel: string label of the station to find
+%<ò
+    destinationIdx = -1;
+    for(i = 1 : size(destinationList,2))
+        if(strcmp(destinationList(i).destinationLabel,destinationLabel))
+            destinationIdx = i;
+        end
+    end
+end
+
